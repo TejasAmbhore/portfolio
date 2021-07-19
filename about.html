@@ -1,13 +1,68 @@
 <html>
-    <head>
-        <title>Portfolio</title>
-        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheets" href="style.css">
-    </head>
-    <body>
-        
-        <script src="script.js"></script>
-    </body>
+
+<head>
+    <title>Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="topnav borderXwidth" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="achieve.html">Achievements</a>
+        <a href="contact.html">Contact Me</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script src="script.js"></script>
+
+    <div id="about"
+        style="display: flex;flex-direction: column;justify-content: center;align-items: center;margin-top: 40px;">
+        <div class="aboutcontainer">
+            <div class="left">
+                <h2 style="color: #fff;font-family: 'Poppins';font-size: 40px;">ABOUT</h2>
+                <p style="font-size: 20px;font-family: 'Poppins';color: #fff;">I am an UG student at IIT Kharagpur’s Mechanical Engineering Department<br> enrolled in 4 year
+                    Manufacturing Science and engineering.<br> I might be engaged in some kind of work all the time or
+                    all kinds of work at some time <br>but I am always up for discussion on Web development, embedded
+                    systems and Machine Learning</p>
+                <div class="overview">
+                    <p>Achievements</p>
+                   <a href="achieve.html"><i class="fa fa-chevron-right"></i></a> 
+                </div>
+            </div>
+            <div class="right">
+                <div class="img1"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="int">INTERESTS</div>
+    <div class="cardcontainer">
+        <div class="card1">
+            <div class="inthead">WED Development</div>
+            <div class="overlay">
+                <div class="text">HTML,CSS3,JS,<br>JQuery,Bootstrap5,<br>SQL,Django,<br>Git,Github</div>
+              </div>
+        </div>
+        <div class="card2">
+            <div class="inthead">Machine Learning</div>
+            <div class="overlay">
+                <div class="text">Linear Regression,<br>Logistic Regression,<br>Neural Networks,<br>Support Vector Machines</div>
+              </div>
+        </div>
+        <div class="card3">
+            <div class="inthead">Embedded Systems</div>
+            <div class="overlay">
+                <div class="text">ABCD<br>EFGH<br>IJKL<br>MNOP</div>
+              </div>
+        </div>
+    </div>
+</body>
+
 </html>
