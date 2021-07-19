@@ -515,21 +515,28 @@ div.borderXwidth a:hover:after {
 .contact{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    flex-basis: 0;
 }
 .container {
-	max-width:400px;
+	max-width:600px;
 	width:100%;
 	margin:0 auto;
 	position:relative;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+#contact input[type="text"], 
+#contact input[type="email"],
+ #contact input[type="tel"],
+  #contact textarea,
+   #contact button[type="submit"]{ 
+    font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 #contact {
 	background:#F9F9F9;
 	padding:25px;
-	margin:50px 0;
+    margin-top: 50px;
 }
 
 #contact h2 {
@@ -553,7 +560,10 @@ fieldset {
 	width: 100%;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact textarea {
+#contact input[type="text"],
+ #contact input[type="email"],
+  #contact input[type="tel"], 
+   #contact textarea {
 	width:100%;
 	border:1px solid #CCC;
 	background:#FFF;
@@ -561,7 +571,10 @@ fieldset {
 	padding:10px;
 }
 
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact textarea:hover {
+#contact input[type="text"]:hover, 
+#contact input[type="email"]:hover, 
+#contact input[type="tel"]:hover, 
+#contact textarea:hover {
 	-webkit-transition:border-color 0.3s ease-in-out;
 	-moz-transition:border-color 0.3s ease-in-out;
 	transition:border-color 0.3s ease-in-out;
@@ -612,25 +625,10 @@ fieldset {
 }
 
 .right2 {
-    height: 300px;
-    width: 300px;
-    margin: 25px;
-    background-color: #a3cedf;
     transition: 0.5s ease-in-out;
     transition-delay: 0.5s;
 }
-
-.img2 {
-    height: 100%;
-    width: 100%;
-    background: url("images/contact.jpg") bottom center;
-    background-size: 100%;
-    transition: 0.5s ease-in-out;
-    transition-delay: 0.15s;
-}
-
 .left2 {
-    justify-content: flex-end;
     width: 345px;
     color: #fff;
     width: 45%;
@@ -640,4 +638,18 @@ fieldset {
     .contact{
         flex-direction: column;
     }
+}
+
+.social{
+    margin: 0 auto 0 auto;
+    text-align: center;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.social li {
+    display: block;
+    margin-top: 20px;
+    font-size: 50px;
+    color: #fff;
 }
