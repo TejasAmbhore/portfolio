@@ -641,7 +641,7 @@ fieldset {
 }
 
 .social{
-    margin: 0 auto 0 auto;
+    margin: 20px auto 0 auto;
     text-align: center;
     top: 0;
     transform: translateX(-50%);
