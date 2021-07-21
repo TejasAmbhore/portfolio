@@ -517,10 +517,14 @@ div.borderXwidth a:hover:after {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-basis: 0;
+    margin: 20px;
+}
+
+.contact > div {
+    margin: 20px;
 }
 .container {
-	max-width:600px;
+	max-width:400px;
 	width:100%;
 	margin:0 auto;
 	position:relative;
@@ -625,13 +629,14 @@ fieldset {
 }
 
 .right2 {
+    width: auto;
     transition: 0.5s ease-in-out;
     transition-delay: 0.5s;
 }
 .left2 {
-    width: 345px;
-    color: #fff;
     width: 45%;
+    color: #fff;
+    justify-content: center;
 }
 
 @media screen and (max-width:600px){
@@ -641,7 +646,7 @@ fieldset {
 }
 
 .social{
-    margin: 20px auto 0 auto;
+    margin: 50px auto 0 auto;
     text-align: center;
     top: 0;
     transform: translateX(-50%);
@@ -652,4 +657,15 @@ fieldset {
     margin-top: 20px;
     font-size: 50px;
     color: #fff;
+}
+
+@media screen and (max-width:600px) {
+    .social li {
+        display:flex;
+        flex-direction: row;
+        flex-basis: 0;
+        justify-content: center;
+        text-align: center;
+    }
+    
 }
